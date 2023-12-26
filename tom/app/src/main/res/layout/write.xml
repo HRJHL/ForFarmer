@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_weight="15">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_weight="5">
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="130px"
+                android:layout_height="130px"
+                android:scaleType="fitXY"
+                android:src="@drawable/b_back"
+                android:background="@color/white"
+                android:layout_gravity="start|center_vertical"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Farm Diary"
+                android:textSize="40dp"
+                android:fontFamily="@font/suite"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="13"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/farmdiary_2" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="end"
+        android:layout_weight="15">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|left"
+            android:layout_weight="2">
+            <TextView
+                android:paddingLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="날짜 : "
+                android:textSize="20dp"
+                android:fontFamily="@font/suite"
+                android:textColor="@color/black"
+                />
+            <EditText
+                android:id="@+id/today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="2020-12-14"
+                android:fontFamily="@font/suite"
+                android:textSize="20dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="30dp"
+            android:gravity="bottom|left"
+            android:layout_weight="2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="오늘의 날씨 : "
+                android:textSize="20dp"
+                android:fontFamily="@font/suite"
+                android:textColor="@color/black"
+                />
+            <EditText
+                android:id="@+id/weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="흐림"
+                android:textSize="20dp"
+                android:fontFamily="@font/suite"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_weight="10">
+
+        <EditText
+            android:id="@+id/writetitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="제목을 작성하세요"
+            android:fontFamily="@font/suite"
+            />
+
+        <EditText
+            android:id="@+id/writebox"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:gravity="top"
+            android:hint="내용을 작성하세요"
+            android:fontFamily="@font/suite"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="end"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:layout_weight="14">
+
+        <ImageButton
+            android:id="@+id/write"
+            android:layout_width="250px"
+            android:layout_height="100px"
+            android:src="@drawable/b_input_submit"
+            android:scaleType="fitXY"
+            android:background="@color/white"
+            />
+
+    </LinearLayout>
+</LinearLayout>

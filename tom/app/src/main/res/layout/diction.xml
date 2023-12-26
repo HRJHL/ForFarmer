@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="병징 정보"
+        android:fontFamily="@font/suite"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="#5B9A77"
+        android:padding="16dp"/>
+
+    <ScrollView
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- First ConstraintLayout -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/con1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bs"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:background="#000000"
+                    app:layout_constraintTop_toTopOf="@+id/img1"
+                    app:layout_constraintBottom_toBottomOf="@+id/img1"
+                    app:layout_constraintStart_toEndOf="@+id/img1"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:id="@+id/tex1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="세균성 점무늬병"
+                    android:textSize="30sp"
+                    android:fontFamily="@font/suite"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/line1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="@+id/img1"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:clickable="true"
+                    android:onClick="onTex1Click"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="#000000"
+                    app:layout_constraintBottom_toBottomOf="@+id/con1" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- Second ConstraintLayout -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/con2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/eb"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:background="#000000"
+                    app:layout_constraintTop_toTopOf="@+id/img2"
+                    app:layout_constraintBottom_toBottomOf="@+id/img2"
+                    app:layout_constraintStart_toEndOf="@+id/img2"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:id="@+id/tex2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="반점병"
+                    android:fontFamily="@font/suite"
+                    android:textSize="30sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/line2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="@+id/img2"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:onClick="onTex2Click"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="#000000"
+                    app:layout_constraintBottom_toBottomOf="@+id/con2" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- 33333333333333333-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/con3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/hn"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <View
+                    android:id="@+id/line3"
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:background="#000000"
+                    app:layout_constraintTop_toTopOf="@+id/img3"
+                    app:layout_constraintBottom_toBottomOf="@+id/img3"
+                    app:layout_constraintStart_toEndOf="@+id/img3"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:id="@+id/tex3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="정상"
+                    android:fontFamily="@font/suite"
+                    android:textSize="30sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/line3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="@+id/img3"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:onClick="onTex3Click"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="#000000"
+                    app:layout_constraintBottom_toBottomOf="@+id/con3" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- 4444444444444444444-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/con4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/lb"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <View
+                    android:id="@+id/line4"
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:background="#000000"
+                    app:layout_constraintTop_toTopOf="@+id/img4"
+                    app:layout_constraintBottom_toBottomOf="@+id/img4"
+                    app:layout_constraintStart_toEndOf="@+id/img4"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:id="@+id/tex4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="역병"
+                    android:textSize="30sp"
+                    android:fontFamily="@font/suite"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/line4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="@+id/img4"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:onClick="onTex4Click"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="#000000"
+                    app:layout_constraintBottom_toBottomOf="@+id/con4" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- 555555555-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/con5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img5"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/lm"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <View
+                    android:id="@+id/line5"
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:background="#000000"
+                    app:layout_constraintTop_toTopOf="@+id/img5"
+                    app:layout_constraintBottom_toBottomOf="@+id/img5"
+                    app:layout_constraintStart_toEndOf="@+id/img5"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:id="@+id/tex5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="잎곰팡이병"
+                    android:textSize="30sp"
+                    android:fontFamily="@font/suite"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/line5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="@+id/img5"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:onClick="onTex5Click"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="#000000"
+                    app:layout_constraintBottom_toBottomOf="@+id/con5" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- 66666666666666666666-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/con6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img6"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pm"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <View
+                    android:id="@+id/line6"
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:background="#000000"
+                    app:layout_constraintTop_toTopOf="@+id/img6"
+                    app:layout_constraintBottom_toBottomOf="@+id/img6"
+                    app:layout_constraintStart_toEndOf="@+id/img6"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:id="@+id/tex6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="흰가루병"
+                    android:textSize="30sp"
+                    android:fontFamily="@font/suite"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/line6"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="@+id/img6"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:onClick="onTex6Click"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="#000000"
+                    app:layout_constraintBottom_toBottomOf="@+id/con6" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- 7777777777777777-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/con7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img7"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sl"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <View
+                    android:id="@+id/line7"
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:background="#000000"
+                    app:layout_constraintTop_toTopOf="@+id/img7"
+                    app:layout_constraintBottom_toBottomOf="@+id/img7"
+                    app:layout_constraintStart_toEndOf="@+id/img7"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:id="@+id/tex7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="시드름병"
+                    android:textSize="30sp"
+                    android:fontFamily="@font/suite"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/line7"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="@+id/img7"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:onClick="onTex7Click"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="#000000"
+                    app:layout_constraintBottom_toBottomOf="@+id/con7" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- 38888888888888888-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/con8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img8"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sm"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <View
+                    android:id="@+id/line8"
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:background="#000000"
+                    app:layout_constraintTop_toTopOf="@+id/img8"
+                    app:layout_constraintBottom_toBottomOf="@+id/img8"
+                    app:layout_constraintStart_toEndOf="@+id/img8"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:id="@+id/tex8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="점박이응애"
+                    android:textSize="30sp"
+                    android:fontFamily="@font/suite"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/line8"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="@+id/img8"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:onClick="onTex8Click"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="#000000"
+                    app:layout_constraintBottom_toBottomOf="@+id/con8" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- 9999999999999999999999-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/con9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img9"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ts"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <View
+                    android:id="@+id/line9"
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:background="#000000"
+                    app:layout_constraintTop_toTopOf="@+id/img9"
+                    app:layout_constraintBottom_toBottomOf="@+id/img9"
+                    app:layout_constraintStart_toEndOf="@+id/img9"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:id="@+id/tex9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="갈색무늬병"
+                    android:textSize="30sp"
+                    android:fontFamily="@font/suite"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/line9"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="@+id/img9"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:onClick="onTex9Click"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="#000000"
+                    app:layout_constraintBottom_toBottomOf="@+id/con9" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- 100000000000000000-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/con10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img10"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/tv"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <View
+                    android:id="@+id/line10"
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:background="#000000"
+                    app:layout_constraintTop_toTopOf="@+id/img10"
+                    app:layout_constraintBottom_toBottomOf="@+id/img10"
+                    app:layout_constraintStart_toEndOf="@+id/img10"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:id="@+id/tex10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="모자이크바이러스"
+                    android:textSize="30sp"
+                    android:fontFamily="@font/suite"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/line10"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="@+id/img10"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:onClick="onTex10Click"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="#000000"
+                    app:layout_constraintBottom_toBottomOf="@+id/con10" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- 11-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/con11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img11"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ty"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <View
+                    android:id="@+id/line11"
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:background="#000000"
+                    app:layout_constraintTop_toTopOf="@+id/img11"
+                    app:layout_constraintBottom_toBottomOf="@+id/img11"
+                    app:layout_constraintStart_toEndOf="@+id/img11"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:id="@+id/tex11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="황화잎마름병"
+                    android:textSize="30sp"
+                    android:fontFamily="@font/suite"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/line11"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="@+id/img11"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:onClick="onTex11Click"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="#000000"
+                    app:layout_constraintBottom_toBottomOf="@+id/con11" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

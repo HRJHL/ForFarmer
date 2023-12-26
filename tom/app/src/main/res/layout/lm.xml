@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/home">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="토마토 잎곰팡이병"
+                android:textSize="24sp"
+                android:fontFamily="@font/suite"
+                android:textStyle="bold"
+                android:textColor="#333333" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:src="@drawable/lm"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="#DDDDDD"
+                android:elevation="4dp" />
+
+            <TextView
+                android:id="@+id/descriptionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="병원균은 병든 잎이나 종자 등에서 겨울을 지내고 1차 전염원이 되나, 시설재배에서는 병원균이 각종 농자재에 붙어 겨울을 지내기도 한다.
+2차 전염은 병반상에 형성된 포자가 전반되어 잎의 기공을 통하여 침입하여 발병된다.
+20～25℃ 의 온도조건하에서 피해가 크며, 특히 시설재배지에서 심하게 발생한다."
+                android:lineSpacingMultiplier="1.4"
+                android:fontFamily="@font/suite"
+                android:textColor="#666666" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="#CCCCCC" />
+
+            <TextView
+                android:id="@+id/symptomsTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="증상:"
+                android:fontFamily="@font/suite"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:textColor="#333333" />
+
+            <TextView
+                android:id="@+id/symptomsContentTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="잎에 발생한다.
+처음에는 잎의 표면에 흰색 또는 담회색의 반점으로 나타나고 진전되면 황갈색 병반으로 확대된다.
+잎 뒷면에 담갈색의 병반이 형성되는데, 병반상에는 갈색의 곰팡이가 융단처럼 밀생되어 있는 것을 볼 수 있으며, 오래되면 균총이 갈색에서 연한 자색으로 변한다.
+주로 아래 잎에서 피해가 크며, 심하면 아랫잎 전체가 누렇게되고 말라 죽는다."
+                android:fontFamily="@font/suite"
+                android:lineSpacingMultiplier="1.4"
+                android:textColor="#666666" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="#CCCCCC" />
+
+            <TextView
+                android:id="@+id/MedicTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="방제 방법:"
+                android:fontFamily="@font/suite"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:textColor="#333333" />
+
+            <TextView
+                android:id="@+id/MedicContentTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- 병든 잎을 신속히 제거한다.
+\n- 90%이상의 상대습도가 유지되지 않도록 한다.
+\n- 통풍이 잘되게 하고 밀식하지 않는다.
+\n- 건전한 종자를 사용하고, 깨끗한 자재를 사용한다.
+\n- 질소질 비료의 과용을 피한다."
+                android:lineSpacingMultiplier="1.4"
+                android:fontFamily="@font/suite"
+                android:textColor="#666666" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/home"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:src="@drawable/b_home"
+        android:background="@color/white"
+        android:scaleType="fitXY"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="goHome"/>
+</RelativeLayout>

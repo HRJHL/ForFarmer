@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/home">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="토마토 시드름병"
+                android:textSize="24sp"
+                android:fontFamily="@font/suite"
+                android:textStyle="bold"
+                android:textColor="#333333" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:src="@drawable/sl"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="#DDDDDD"
+                android:elevation="4dp" />
+
+            <TextView
+                android:id="@+id/descriptionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="전국의 토마토 재배지역에서 고루 발생하여 많은 피해를 주고 있는 중요한 토양전염성 병해이다.
+병원균은 병든 식물체의 조직속이나 토양속에서 균사나 후막포자 상태로 겨울을 지내고 1차 전염원이 된다.
+물로 이동되는 거리는 매우 짧고, 주로 흙입자에 묻혀 농기구나 사람 등을 통해 먼 거리로 이동된다.
+병원균은 주로 가는 뿌리나 상처를 통해 침입하는데, 포장 정식 직후에 감염되는 경우가 많다.
+서늘한 지방에서는 병 발생이 적고, 감염되어도 병 증상이 잘 나타나지 않다가 생육 중기나 후기에 기온이 올라가면 병 증상이 나타난다.
+병 발생에 적합한 온도는 24～30℃이며 16℃이하나 35℃이상에서는 거의 발생하지 않는다.
+일반적으로 산성토양(pH 4.5～5.5)과 사질양토에서 발생이 많은데, 이는 토양수분의 불균형에 의해 식물체가 스트레스를 받아 약해지므로 병원균의 침입이 용이해지기 때문이다.
+병원균은 토양중에 널리 분포하며, 겨울을 지내는 주체인 후막포자는 기주가 없이도 토양내에서 수 년간 생존하기 때문에 방제가 매우 어려운 병해이다."
+                android:lineSpacingMultiplier="1.4"
+                android:fontFamily="@font/suite"
+                android:textColor="#666666" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="#CCCCCC" />
+
+            <TextView
+                android:id="@+id/symptomsTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="증상:"
+                android:fontFamily="@font/suite"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:textColor="#333333" />
+
+            <TextView
+                android:id="@+id/symptomsContentTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="병든 식물체는 생육이 억제되며 아랫 잎이 시들고 밑으로 처진다.
+일반적으로 병 진전이 다소 느리고 아랫 잎이 약간 누렇게 변하여 서서히 죽는다.
+주로 곁뿌리가 나온 부분으로 병원균이 침입하여 도관부를 침해한다.
+기온이 상승한 낮 동안에 심하게 시들고, 아침과 저녁에는 다소 회복되기도 하는데, 심한 경우 줄기 내부의 도관은 아래 잎자루까지 암갈색으로 변하기도 한다.
+땅가 부위의 줄기에 괴저증상이 나타나기도 하며, 진전되면 줄기의 전 둘레가 썩는다.
+병든 그루의 과실은 작고 불량해진다."
+                android:fontFamily="@font/suite"
+                android:lineSpacingMultiplier="1.4"
+                android:textColor="#666666" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="#CCCCCC" />
+
+            <TextView
+                android:id="@+id/MedicTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="방제 방법:"
+                android:fontFamily="@font/suite"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:textColor="#333333" />
+
+            <TextView
+                android:id="@+id/MedicContentTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- 이어짓기를 피하고 병 발생이 심한 토양은 5년 이상 돌려짓기를 해야한다.
+\n- 석회시용으로 토양 산토를 높이고(pH 6.5～7.0) 토양선충이나 토양 미소동물에 의해 뿌리에 상처가 나지 않도록 한다.
+\n- 미숙퇴비 시용을 금하고 토양 내 염류 농도가 높지 않게 주의한다.
+\n- 토양을 장기간 담수하거나 태양열 소독을 하면 병원균의 밀도를 줄인다."
+                android:lineSpacingMultiplier="1.4"
+                android:fontFamily="@font/suite"
+                android:textColor="#666666" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/home"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:src="@drawable/b_home"
+        android:background="@color/white"
+        android:scaleType="fitXY"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="goHome"/>
+</RelativeLayout>

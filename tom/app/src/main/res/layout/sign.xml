@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/activity_signup.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/logo"
+        />
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_below="@id/logo"
+        android:hint="사용자 이름"
+        android:fontFamily="@font/suite"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernameEditText"
+        android:layout_marginBottom="16dp"
+        android:hint="비밀번호"
+        android:fontFamily="@font/suite"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/confirmPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordEditText"
+        android:layout_marginBottom="16dp"
+        android:hint="비밀번호 확인"
+        android:fontFamily="@font/suite"
+        android:inputType="textPassword"/>
+
+    <ImageButton
+        android:id="@+id/signUpButton"
+        android:layout_width="500px"
+        android:layout_height="150px"
+        android:layout_below="@id/confirmPasswordEditText"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/b_submit"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="80dp"
+        android:background="@color/white"
+        />
+
+</RelativeLayout>
